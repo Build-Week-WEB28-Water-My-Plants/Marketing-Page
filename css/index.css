@@ -310,6 +310,9 @@ nav a {
 }
 .home .content-pick .destination {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
