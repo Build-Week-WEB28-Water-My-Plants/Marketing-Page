@@ -16,47 +16,91 @@
       padding: 0 15px;
     }
   }
-
-  .mid-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
-
-    @media @phone {
-      .sky,
-      .launch {
-        display: none;
-      }
-      .blast {
-        width: 100%;
-      }
-    }
-  }
+}
 
   .actions {
     display: flex;
-    justify-content: space-evenly;
+   justify-content: space-between;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    .dwnld{
+      display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: white;
+  width: 20%;
+  p{
+    text-align: justify;
+  }
+  img{
+    width: 100%;
+  }
+    @media @phone{
+      width: 100%;
+    }  
+    }
+    .use{
+      display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: white;
+  width: 20%;
+  p{
+    text-align: justify;
+  }
+  img{
+    width: 100%;
+  }
+  @media @phone{
+    width: 100%;
+    margin-top: 2%;
+  }  
+    }
+    .enjoy1{
+      display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: white;
+  width: 20%;
+  p{
+    text-align: justify;
+  }
+  img{
+    width: 100%;
+  }
+  @media @phone{
+    width: 100%;
     margin-top: 3%;
-
-    .download {
-      margin-right: 10%;
+  }  
     }
 
-    .use {
-      margin-right: 15%;
-    }
-
-    .enjoy {
-      margin-right: 8%;
+    @media @phone{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
     }
   }
+
+    h2{
+      color: rgb(4, 78, 4);
+      text-align: center;
+    }
+
+   
+  
+  .content{
+    display: flex;    
+   justify-content: space-evenly;
+    width: 100%;
+
+    p{   
+    width: 35%;
+    background-color: white;
+    padding: 2%;
+    }
+  }
+
 
   .About {
     display: flex;
@@ -95,42 +139,372 @@
         padding: 12px 44px;
         text-decoration: none;
         text-shadow: 0px 1px 0px #528ecc;
+
+        @media @phone{
+          margin-bottom: 4%;
+        }
       }
       .signup:hover {
         background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
         background-color: #378de5;
       }
+      @media @phone{
+        flex-direction: column;
+        width: 100%;
+        margin-right: 5%;        
+      }
     }
-
     img {
-      border: 1px solid red;
       width: 40%;
       height: 2%;
+      
+      @media @phone{
+        width: 100%;
+      }
     }
+    @media @phone{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-left: -2%;
+    }
+   
   }
 
-  @media @phone {
-    flex-direction: column-reverse;
-    padding: 2%;
-    align-content: center;
-    margin-right: 1%;
+.container-top{
+  display: flex;
+ justify-content: space-evenly;
+  width: 80%;
+  height: 30%;
+  margin-left: 3%;
+  
+  button{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #57626d;
+    border-radius: 5px;
+    border: 1px solid #337bc4;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 44px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528ecc;
   }
-}
 
-.top-content{
+  p{
+    text-align: justify;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+
+.top-left{
   display: flex;
   justify-content: space-evenly;
-  margin-top: 3%;
-
-  div{
-    width: 50%;
-  }
-p{
-  width: 40%;
-  }
-}
+  flex-direction: column;
+  background-color: white;
+  width: 20%;
   img{
-    width: 30%;
+    width: 100%;
+  }
+  @media @phone {
+    width: 100%;
   }
 }
-  // home
+  .top-mid{
+    display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: white;
+  width: 20%;
+
+
+  img{
+    width: 100%;
+  }
+  @media @phone {
+    width: 100%;
+  }
+button{
+  padding-top: 5%;
+  width: 50%;
+}
+}
+.top-right{
+  display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+background-color: white;
+width: 20%;
+
+
+img{
+  width: 100%;
+}
+@media @phone {
+  width: 100%;
+}
+// home
+}
+
+@media @phone{
+  display: flex;
+  flex-direction: column;
+}
+}
+
+.container-mid{
+  display: flex;
+ justify-content: space-evenly;
+  width: 80%;
+  height: 30%;
+  margin-top: 5%;
+  margin-left: 3%;
+
+  button{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #57626d;
+    border-radius: 5px;
+    border: 1px solid #337bc4;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 44px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528ecc;
+  }
+
+  p{
+    text-align: justify;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+
+.mid-left{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: white;
+  width: 20%;
+  img{
+    width: 100%;
+  }
+  @media @phone {
+    width: 100%;
+  }
+}
+  .mid-mid{
+    display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: white;
+  width: 20%;
+
+
+  img{
+    width: 100%;
+  }
+  @media @phone {
+    width: 100%;
+  }
+
+}
+.mid-right{
+  display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+background-color: white;
+width: 20%;
+
+
+img{
+  width: 100%;
+}
+@media @phone {
+  width: 100%;
+}
+// home
+}
+@media @phone{
+  display: flex;
+  flex-direction: column;
+}
+}
+
+.container-bottom{
+  display: flex;
+ justify-content: space-evenly;
+  width: 80%;
+  height: 30%;
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-bottom: 5%;
+
+  button{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #57626d;
+    border-radius: 5px;
+    border: 1px solid #337bc4;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 44px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528ecc;
+  }
+
+  p{
+    text-align: justify;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+
+.bottom-left{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: white;
+  width: 20%;
+  img{
+    width: 100%;
+  }
+  @media @phone {
+    width: 100%;
+  }
+}
+  .bottom-mid{
+    display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: white;
+  width: 20%;
+
+
+  img{
+    width: 100%;
+  }
+  @media @phone {
+    width: 100%;
+  }
+
+}
+.bottom-right{
+  display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+background-color: white;
+width: 20%;
+
+
+img{
+  width: 100%;
+}
+@media @phone {
+  width: 100%;
+}
+// home
+}
+@media @phone{
+  display: flex;
+  flex-direction: column;
+}
+}
+
+.container-bottom2{
+  display: flex;
+ justify-content: space-evenly;
+  width: 80%;
+  height: 30%;
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-bottom: 5%;
+
+  button{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #57626d;
+    border-radius: 5px;
+    border: 1px solid #337bc4;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 44px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528ecc;
+  }
+
+  p{
+    text-align: justify;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+
+.bottom-left2{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: white;
+  width: 20%;
+  img{
+    width: 100%;
+  }
+  @media @phone {
+    width: 100%;
+  }
+}
+  .bottom-mid2{
+    display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: white;
+  width: 20%;
+
+
+  img{
+    width: 100%;
+  }
+  @media @phone {
+    width: 100%;
+  }
+
+}
+.bottom-right2{
+  display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+background-color: white;
+width: 20%;
+
+
+img{
+  width: 100%;
+}
+@media @phone {
+  width: 100%;
+}
+// home
+}
+}
+
