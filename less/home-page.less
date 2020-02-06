@@ -17,12 +17,89 @@
     }
   }
 }
+.home{
+  background: url('../img/hero-large-enhanced.jpg');
+ background-size: cover;
+ background-position: center;
+
+  .phone{ 
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    float: none;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 600px;
+    margin-left: 40%;
+
+    @media @phone{
+      display: none;
+    }
+  }
+}
+
+.head-text{
+  width: 100%;
+  height: 100vh;   
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -20%;
+
+  .PW{
+    margin-left: 20%;
+    font-size: 4vw;
+    color: rgb(11, 241, 11);
+    margin-top: 15%;
+    font: @nav-font;
+    width: 25%;
+
+    @media @phone{
+      margin-top: 30%;
+      font-size: 13vw;
+    } 
+  }
+
+  .BP{
+    margin-left: 60%;
+    font-size: 4vw;
+    color: rgb(11, 241, 11);
+    margin-top: 6%;
+    font: @nav-font;
+    width: 40%;
+
+    @media @phone{
+      margin-top: 30%;
+      font-size: 13vw;
+      margin-left: 20%;;
+    } 
+  }
+
+  .BP2{
+    margin-left: 20%;
+    font-size: 4vw;
+    color: rgb(11, 241, 11);
+    margin-top: 6%;
+    font: @nav-font;
+    width: 25%;
+
+    @media @phone{
+      margin-top: 30%;
+      font-size: 13vw;
+      margin-left: 20%;;
+    } 
+  }
+
+}
+
 
   .actions {
     display: flex;
+    flex-direction: column;
    justify-content: space-between;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 20%;
     margin-bottom: 5%;
     .dwnld{
       display: flex;
@@ -30,6 +107,12 @@
   flex-direction: column;
   background-color: white;
   width: 20%;
+  margin-top: 10%;
+  margin-left: 20%;
+
+  @media @phone{
+    margin-left: 0%;
+  }
   p{
     text-align: justify;
     padding: 5%;
@@ -39,6 +122,7 @@
   }
     @media @phone{
       width: 100%;
+      margin-top: 40%;
     }  
     }
     .use{
@@ -47,6 +131,8 @@
   flex-direction: column;
   background-color: white;
   width: 20%;
+  margin-top: 10%;
+  margin-left: 60%;
   p{
     text-align: justify;
     padding: 5%;
@@ -56,7 +142,8 @@
   }
   @media @phone{
     width: 100%;
-    margin-top: 2%;
+    margin-top: 20%;
+    margin-left: 0%;
   }  
     }
     .enjoy1{
@@ -65,6 +152,8 @@
   flex-direction: column;
   background-color: white;
   width: 20%;
+  margin-top: 10%;
+  margin-left: 20%;
   p{
     text-align: justify;
     padding: 5%;
@@ -74,7 +163,8 @@
   }
   @media @phone{
     width: 100%;
-    margin-top: 3%;
+    margin-top: 30%;
+    margin-left: 0%;
   }  
     }
 
@@ -109,13 +199,17 @@
     display: flex;
     width: 80%;
     padding-top: 5%;
-    margin-left: 20%;
+    margin-left: 16%;
     margin-bottom: 5%;
+    padding-bottom: 10%;
+
 
     div {
       width: 30%;
       background-color: white;
       text-align: center;
+      margin-right: 13%;
+      padding-top: 5%;
 
       h3 {
         padding-bottom: 4%;
@@ -129,6 +223,7 @@
       }
       button {
        .button-style();
+       margin-right: 20%;
 
         @media @phone{
           margin-bottom: 4%;
@@ -141,15 +236,17 @@
       @media @phone{
         flex-direction: column;
         width: 100%;
-        margin-right: 5%;        
+        margin-right: 10%;        
       }
     }
     img {
       width: 40%;
       height: 2%;
+      margin-left: 8%;
       
       @media @phone{
         width: 100%;
+        margin-left: 0%;
       }
     }
     @media @phone{
@@ -167,6 +264,7 @@
   width: 80%;
   height: 30%;
   margin-left: 3%;
+  margin-top: 10%;
   
   button{
     .button-style();
