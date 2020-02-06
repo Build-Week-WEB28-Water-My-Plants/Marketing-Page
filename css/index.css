@@ -194,7 +194,7 @@ h1 {
 nav {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 30%;
 }
 @media ( max-width: 500px ) {
   nav {
@@ -204,9 +204,10 @@ nav {
 }
 nav a {
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   justify-content: space-around;
-  color: #454A59;
+  color: green;
+  border-bottom: 2px solid grey;
 }
 @media ( max-width: 500px ) {
   nav a {
